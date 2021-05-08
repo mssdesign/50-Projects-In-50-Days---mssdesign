@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #f6f7fb;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;    
+}
+
+.container {
+    text-align: center;
+}
+
+.barra-de-progresso {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.barra-de-progresso::before {
+    content:'';
+    background-color: #cecece;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progresso {
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4 ease;
+}
+
+.circulo {
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #cecece;
+    border: 3px solid #cecece;
+    transition: 0.4s ease;
+}
+
+.circulo.ativo {
+    border-color: #3498db;
+}
+
+.botao {
+    background-color: #3498db;
+    
+
+}
