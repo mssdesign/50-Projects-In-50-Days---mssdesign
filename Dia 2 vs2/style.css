@@ -49,7 +49,7 @@ body {
     left: 0;
     transform: translateY(-50%);
     height: 4px;
-    width: 100%;
+    width: 0%;
     z-index: -1;
     transition: 0.4 ease;
 }
@@ -73,6 +73,26 @@ body {
 
 .botao {
     background-color: #3498db;
-    
+    color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    width: 100px;
+}
 
+.botao:active {
+    transform: scale(0.98);
+}
+
+.botao:focus {
+    outline: 0;
+}
+
+.botao:disabled {
+    background-color: #cecece;
+    cursor: not-allowed;
 }
