@@ -1,10 +1,10 @@
-var container = document.getElementById('.container')
-var fechar = document.getElementById('')
-var abrir = document.getElementById('abrir')
+const container = document.querySelector('.container')
+const fechar = document.getElementById('botao_sair')
+const abrir = document.getElementById('botao_menu')
 
-function fechar () {
-    addEventListener('click, () => container.classList.add('mostrar')
-}
+abrir.addEventListener('click', () => container.classList.add('mostrar'))
+
+fechar.addEventListener('click', () => container.classList.remove('mostrar'))
 
 
 
