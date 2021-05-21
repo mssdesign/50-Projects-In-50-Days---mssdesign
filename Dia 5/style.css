@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+}
+
+.bg {
+    background: url('https://cdn.pixabay.com/photo/2021/04/19/11/14/snail-6191155_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30px; /*diminui a área borrada em branco pelo borrão blur nas bordas*/
+    left: -30px;
+    width: calc(100vw + 60px); /*Diminui ainda mais bordas brancas*/ 
+    height: calc(100vh + 60px);
+    z-index: -1; /*move a camada para trás*/
+    filter: blur(30px); /*cria o borrão*/
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
