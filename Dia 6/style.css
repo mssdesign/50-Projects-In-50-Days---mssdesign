@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    overflow-x: hidden; 
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box{
+    background-color: steelblue;
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: translateX(1000%); /*Faz as caixas sumirem*/
+    transition: transform 0.4s ease;
+}
+
+/* even = par e odd = impar */
+.box:nth-of-type(even) {
+    transform: translateX(-1000%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+h2 {
+    font-size: 45px;
+}
+
