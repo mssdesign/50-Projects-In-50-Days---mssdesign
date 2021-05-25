@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    z-index: 1;
+    color: #fff;
+    font-size: 50px;
+}
+
+.backplay {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(70,130,180);
+    opacity: 0.5
+}
+
+.backbox {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(0,0,0);
+    opacity: 0.5
+}
+
+.play {
+    float: left;    
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background: url('https://wallpapercave.com/wp/wp6560185.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    margin: 50px;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2.1px solid #fff;
+    font-weight: bolder;
+    z-index: 1;
+    /* Ao definir a borda como "solid" a sombra do botão desaparece   */
+}
+
+.pbutton:hover {
+    background-color: steelblue;
+    border-color: steelblue;
+}
+
+.xbutton:hover {
+    background-color: rgb(0, 93, 20);
+    border-color: rgb(0, 93, 20);
+}
+
+.xbox {
+    display: flex;    
+    float: right;
+    width: 50vw;
+    height: 100vh;
+    background: url('https://www.hardware.com.br/filters:format:(jpeg)/@/static/wp/2019/12/14/90-3.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
