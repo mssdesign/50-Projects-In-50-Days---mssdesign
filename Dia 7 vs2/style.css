@@ -5,7 +5,10 @@
     --color-btn-play: rgba(87, 84, 236, 1);
     --color-btn-xbox: rgba(28, 122, 28, 1);
     --color-hover-play: rgba(87, 84, 236, 0.7);
-    --color-hover-xbox: rgba(43, 43, 43, 0.8);    
+    --color-hover-xbox: rgba(43, 43, 43, 0.8);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;    
 }
 
 * {
@@ -101,9 +104,33 @@ h1 {
     background-size: cover;
 }
 
-container {
-    position: relative;
-    top: 100%;
-    width: 100%;
-    background: #333;
+.metade.play, .metade.xbox, .metade.play::before, .metade.xbox::before {
+    transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .play {
+    width: var(--hover-width);
+}
+
+.hover-left .xbox {
+    width: var(--other-width);
+}
+
+.hover-right .xbox {
+    width: var(--hover-width);
+}
+
+.hover-right .play {
+    width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1.2rem;
+        width: 12rem;
+    }
 }
