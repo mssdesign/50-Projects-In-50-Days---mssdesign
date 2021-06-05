@@ -2,7 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
+body {
+    font-family: 'Mulish', sans-serif;
+}
 
+.wave {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;    
+}
+
+.img img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.profile {
+    width: 100px;
+}
