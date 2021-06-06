@@ -14,8 +14,9 @@
 <body>
     <img src="wave/wave.png" alt="wave" class="wave">
 
-    <div class="container">       
+    <div class="container">
 
+        <!-- imagem ao lado -->
         <div class="img">
             <img src="fotos/phone.svg" alt="phone">
         </div>        
@@ -28,30 +29,37 @@
             <h1 id="title">Bem vindo</h1>
             
             <div class="input-div one">
+
                 <div class="login">
                     <img src="fotos/login.svg" alt="login">
                 </div>
-                <div>
-                    <h5><b>Email</b></h5>
-                    <input type="text" class="input">
+
+                <div class="form-login">
+                    <label>Email</label>
+                    <input type="text" class="input" onclick="hoverLogin()">
                 </div>
+
             </div>
 
             <!-- Senha -->
             <div class="input-div two">
+
                 <div class="password">
                     <img src="fotos/lock.svg" alt="senha">
                 </div>
-                <div>
-                    <h5><b>Senha</b></h5>
-                    <input type="password" class="input"><br>                    
+
+                <div class="form-password">
+                    <label>Senha</label>
+                    <input type="password" class="input" onclick="hoverPassword()">                 
                 </div>
+
             </div>
 
+            <!-- Outros -->
             <a href="#" id="esqueceu">Esqueci minha senha</a>
                     <input type="submit" class="btn" value="login">
 
-           <a href="#" id="cadastre">Cadastre-se</a></p>
+            <a href="#" id="cadastre">Cadastre-se</a></p>
 
         </div>
 
