@@ -1,27 +1,18 @@
 const text = document.getElementById('piada')
+const btn = document.getElementById('btn')
 
-function piada() {
-    fetch('https://icanhazdadjoke.com/')
-    .then((res) => res.json())
-    .then(function (data) {
-        console.log(data)
-    })
-}
+btn.addEventListener('click', piada)
 
 piada()
 
+async function piada() {
+    const config = {
+        headers: {
+            'Accept': 'application/json',
+        }
+    }
 
-        
-    
-
-
-
-// function piada() {
-//     var df = await fetch('https://icanhazdadjoke.com/')
-//     text.innerText = df
-// }
-
-
-// piada()
-
-
+    const response = await fetch('https://icanhazdadjoke.com/', config)
+    const data = await response.json()
+    text.innerText = data.joke
+}

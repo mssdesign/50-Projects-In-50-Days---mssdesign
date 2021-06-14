@@ -57,3 +57,13 @@ h1 {
 #btn:hover {
     transform: scale(0.98);
 }
+
+#piada {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 400px;
+}
