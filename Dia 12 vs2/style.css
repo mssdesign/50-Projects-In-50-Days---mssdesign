@@ -16,13 +16,13 @@ body {
 
 .container {
     margin-top: 25px;
-    width: 600px;
+    max-width: 600px;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 2rem;
 }
 
 /* perguntas */
@@ -31,15 +31,19 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.151);
     padding: 10px 40px;
     border-radius: 10px;
-    margin: 25px 5px;
+    margin: 20px 5px;
     height: auto;
+    overflow: hidden;
 }
 
 .ask_question {
     display: flex;
     height: 100%;
     align-items: center;
-    font-size: 1.5vw;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 /* botões */
@@ -48,7 +52,6 @@ h1 {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 3vw;
 }
 
 .ask .ask_solved {
@@ -66,3 +69,12 @@ h1 {
 .ask.active .cancel {
     display: block;
 }
+
+/* 
+- Falta colocar fundo branco
+- Falta colocar desenhos no fundo
+- Falta trocar a cor do cancel para cinza claro
+- fazer ask maior para active ask 
+- colocar sombra em volta do active ask 
+- mostrar ask_resolution  
+*/
