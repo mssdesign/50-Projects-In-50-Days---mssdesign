@@ -6,10 +6,65 @@
 }
 
 body {
+    display: flex;
     font-family: 'Mulish', sans-serif;
     font-size: medium;
     background-color: #e7e7e7;
+    align-items: center;
+    justify-content: center;
 }
+
+.container {
+    margin-top: 25px;
+    width: 600px;
+    /* border: 1px solid; */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* perguntas */
+.ask {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 25px 5px;
+    height: auto;
+}
+
+.ask_question {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* botões */
+.done,.cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ask .ask_solved {
+    display: none;
+}
+
+.ask.active .done {
+    display: none;
+}
+
+.ask .cancel {
+    display: none;
+}
+
+.ask.active .cancel {
+    display: block;
+}
+
 
 
 
