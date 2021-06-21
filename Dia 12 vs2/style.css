@@ -16,7 +16,7 @@ body {
 
 .container {
     margin-top: 25px;
-    max-width: 600px;
+    width: 600px;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
 .ask {
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.151);
-    padding: 10px 40px;
+    padding: 25px 40px;
     border-radius: 10px;
     margin: 20px 5px;
     height: auto;
@@ -42,9 +42,28 @@ h1 {
     align-items: center;
 }
 
-h2 {
-    font-size: 1rem;
+.ask.active {
+    padding: 10px 40px;
+    background-color: #fff;
+    background-image: url('quest.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
 }
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.ask .ask_solved {
+    display: none;
+}
+
+.ask.active .ask_solved {
+    display: block;
+}
+
 
 /* botões */
 .done,.cancel {
@@ -54,12 +73,12 @@ h2 {
     cursor: pointer;
 }
 
-.ask .ask_solved {
+.ask.active .done {
     display: none;
 }
 
-.ask.active .done {
-    display: none;
+.cancel {
+    color: rgba(0, 0, 0, 0.26);
 }
 
 .ask .cancel {
@@ -69,12 +88,3 @@ h2 {
 .ask.active .cancel {
     display: block;
 }
-
-/* 
-- Falta colocar fundo branco
-- Falta colocar desenhos no fundo
-- Falta trocar a cor do cancel para cinza claro
-- fazer ask maior para active ask 
-- colocar sombra em volta do active ask 
-- mostrar ask_resolution  
-*/
