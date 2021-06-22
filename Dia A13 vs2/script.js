@@ -1,16 +1,22 @@
 const caixatexto = document.getElementById('caixatexto');
 const tags = document.getElementById('tags');
+let i = 0;
 
 caixatexto.addEventListener('keyup', (event) => {
-    if(event.key === 'Enter') {
-        newelement()
-        caixatexto.value = ''
+    let text = caixatexto.value.trim() 
+    let array = text.split(',')
+
+    if(event.key === ',') {
+        newElement()
     }
 
-    function newelement() {
+    function newElement() {
         const span = document.createElement('span');
         span.classList.add('tag');
-        span.innerText = caixatexto.value;
+        span.innerText += array[i];
         tags.appendChild(span);
+        i++
     }
+
+    console.log(array)
 })
