@@ -50,7 +50,3 @@ h2 {
     margin: 15px 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
-.tag.active {
-    background-color: rgb(3, 3, 114);
-}
