@@ -78,6 +78,11 @@ body {
 .container.active ul li {
     list-style-type: none;
     margin: 10px;
+    border: 1px solid black;
+}
+
+.container.active ul li:hover {
+    border-bottom: 2px solid #000;
 }
 
 a {
@@ -106,3 +111,5 @@ a {
     transform: rotate(-765deg);
     transition: 0.9s ease;
 }
+
+/* Falta colocar as bordas do meio para as laterais e sem levantar as palavras */
