@@ -11,10 +11,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-size: large;
     font-weight: bold;
     margin: 0;
     background-color: #eafbff;
-    background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+    background: #2980B9;
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    overflow: hidden;
 }
 
 .container {
@@ -26,7 +30,7 @@ body {
     border-radius: 3px;
     align-items: center;
     justify-content: center;
-    transition: 0.5s ease;
+    transition: 0.6s linear;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
@@ -35,18 +39,18 @@ body {
 }
 
 .container .line {
-    width: 18px;
+    width: 20px;
     background-color: #a2bbe7;
     height: 2px;      
     transform: rotate(0deg);
-    transition: 0.9s ease;
+    transition: transform 0.6s linear;
 }
 
 .container .line2 {
     display: flex;
     margin-top: 10px;
     transform: rotate(0deg);
-    transition: 0.9s ease;
+    transition: transform 0.6s linear;
 }
 
 .container button {
@@ -61,12 +65,12 @@ body {
     position: relative;
     display: flex;
     background-color: #fff;
-    width: 350px;
+    width: 400px;
     height: 80px;
     border-radius: 3px;
     align-items: center;
     justify-content: left;
-    transition: 0.6s ease;
+    transition: width 0.6s linear;
 }
 
 .container.active ul {
@@ -76,13 +80,26 @@ body {
 }
 
 .container.active ul li {
+    position: relative;
     list-style-type: none;
     margin: 10px;
-    border: 1px solid black;
 }
 
-.container.active ul li:hover {
-    border-bottom: 2px solid #000;
+.container.active ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -2px;
+    left: 25%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.container.active ul li:hover::after {
+    left: 0%;
+    width: 100%;
 }
 
 a {
@@ -90,26 +107,26 @@ a {
     text-decoration: none;
 }
 
+/* Botão */
 .container.active button {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    transform: translateX(310px);
+    transform: translateX(350px);
+    margin-top: -10px;
+    transition: 0.6s linear;
 }
 
 .container.active .line {
-    width: 18px;
+    width: 22px;    
     background-color: #a2bbe7;
-    height: 2px;  
-    transform: rotate(765deg);
-    transition: 0.9s ease;
+    transform: rotate(765deg) translateY(8px);
+    transition: transform 0.6s linear;
 }
 
 .container.active .line2 {
     display: flex;
-    margin-top: -2px;
-    transform: rotate(-765deg);
-    transition: 0.9s ease;
+    position: absolute;
+    transform: rotate(-765deg) translateY(-8px);
+    transition: transform 0.6s linear;
 }
-
-/* Falta colocar as bordas do meio para as laterais e sem levantar as palavras */
