@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     font-weight:lighter;
-    font-size: medium;
+    font-size: small;
     background: #8E2DE2;
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
     background: linear-gradient(to right, #4A00E0, #8E2DE2);
