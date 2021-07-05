@@ -45,10 +45,28 @@ h1 {
     flex-direction: column;
     border: 5px solid var(--azul-escuro);
     border-radius: 0px 0px 30px 30px;
+    overflow: hidden;
 }
 
-.copo h2, small {
-    margin: 0;
+.ar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;    
+}
+
+.agua {
+    position: relative;
+    width: 180px;
+    height: 0;
+    background-color: var(--azul-claro);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .area-copos {
