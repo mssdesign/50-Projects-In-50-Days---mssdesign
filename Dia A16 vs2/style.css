@@ -67,6 +67,7 @@ h1 {
     display: flex;
     font-size: large;
     font-weight: bolder;
+    transition: linear 500ms;
 }
 
 .area-copos {
