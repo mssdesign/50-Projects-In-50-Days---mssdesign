@@ -9,7 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #143967;
-    font-size: medium;
+    font-size: small;
 }
 
 /* CABECALHO */
@@ -17,8 +17,8 @@ header {
     display: flex;
     background-color: #022146;
     width: 100vw;
-    height: 200px;
-    position: relative;
+    height: 100px;
+    position: sticky;
 }
 
 .logo {
@@ -66,16 +66,23 @@ header nav ul li a {
 }
 
 /* PRINCIPAL */
-
 main {
-    height: 75vh;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .pesquisa {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 20%;
     margin-top: 30px;
+}
+
+.pesquisa button {
+    background-color: transparent;
+    border: none;
 }
 
 .pesquisa i {
@@ -85,8 +92,8 @@ main {
 
 .pesquisa input {        
     background-color: #fff;
-    height: 50px;
-    width: 600px;
+    height: 2em;
+    width: 50vw;
     border: 1px solid #fff;
     border-radius: 50px;
     margin-left: 15px;
@@ -94,8 +101,57 @@ main {
     font-size: 1.5em;
 }
 
+/* POSTER */
+.film {
+    color: #fff;
+    height: 420px;
+    width: 250px;
+    position: relative;
+    background-color: #022146;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.film img {
+    height: 350px;
+    width: 250px;
+}
+
+.film h2 {
+    padding-left: 10px;
+}
+
+.film .nota {
+    background-color: #000a16;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.film .critica {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    opacity: 0;
+    transition: 200ms ease;
+    padding-left: 10px;
+}
+
+.film:hover .critica {
+    opacity: 1;    
+    transform: translateY(-100%);
+}
+
 /* RODAPE */
 footer {
+    color: #fff;
     display: flex;
     justify-content: center;
 }

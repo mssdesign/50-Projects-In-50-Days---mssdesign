@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superfilmes HD</title>
-    <script src="https://kit.fontawesome.com/0267d3181d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Superfilmes HD</title>
+        <script src="https://kit.fontawesome.com/0267d3181d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html">
+                    <h1><i class="fas fa-film"></i> Superfilmes HD</h1><br>
+                    <p>Divirta-se em um único lugar!</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-home"></i> menu</a></li>
+                    <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-star"></i> favoritos</a></li>
+                    <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-hand-paper"></i> ajuda</a></li>
+                    <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-cog"></i> configurações</a></li>
+                    <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-search"></i> FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="logo">
-            <a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html">
-                <h1><i class="fas fa-film"></i> Superfilmes HD</h1><br>
-                <p>Divirta-se em um único lugar!</p>
-            </a>
-        </div>
+        <main>            
+            <form class="pesquisa">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="text" autofocus placeholder="Pesquisar filmes">
+            </form>
 
-        <nav>
-            <ul>
-                <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-home"></i> menu</a></li>
-                <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-star"></i> favoritos</a></li>
-                <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-hand-paper"></i> ajuda</a></li>
-                <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-cog"></i> configurações</a></li>
-                <li><a href="http://127.0.0.1:5500/Dia%20A17%20vs2/index.html"><i class="fas fa-search"></i> FAQ</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <div class="film">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/15/16/42/batman-5174224_960_720.jpg" alt="">
+                    <h2>Batman</h2>
+                    <div class="nota"><h3>5.5</h3></div>
+                    <div class="critica">
+                        <h2>Resumo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi neque ipsum temporibus tempora dolorem. Magni earum veritatis itaque autem quae ea atque possimus libero molestiae. Ipsa ut fuga consequuntur aspernatur!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-    </header>
+        <footer>
+            <p>&copy; Superfilmes HD - Todos os direitos reservados</p>
+        </footer>
 
-    <main>
-        
-        <div class="pesquisa"><i class="fas fa-search"></i><input type="text" autofocus placeholder="Pesquisar filmes"></div>
+        <script src="script.js"></script>
 
-    </main>
-
-    <footer>
-
-        <p>&copy; Superfilmes HD - Todos os direitos reservados</p>
-
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
