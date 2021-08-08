@@ -2,10 +2,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-color: #143967;
+    font-size: medium;
+}
+
+/* CABECALHO */
+header {
+    display: flex;
+    background-color: #022146;
+    width: 100vw;
+    height: 200px;
+    position: relative;
+}
+
+.logo {
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo h1 {
+    position: absolute;
+    font-size: 3em;
+    left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.logo p {
+    position: absolute;
+    margin-top: 50px;
+    left: 10px;
+}
+
+header nav {
+    display: flex;
+    right: 25px;
+    position: absolute;
+    bottom: -10px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 10px 2px 10px;
+    list-style: none;
+}
+
+header nav ul li a {   
+    text-decoration: none;
+    color: #fff;
+}
+
+/* PRINCIPAL */
+
+main {
+    height: 75vh;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pesquisa i {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.pesquisa input {        
+    background-color: #fff;
+    height: 50px;
+    width: 600px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-left: 15px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+/* RODAPE */
+footer {
+    display: flex;
+    justify-content: center;
 }
