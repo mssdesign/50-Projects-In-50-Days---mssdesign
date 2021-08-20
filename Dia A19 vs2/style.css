@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #fff;
+}
+
+html.dark {
+    --cor-primaria: #fff;
+    --cor-secundaria: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    text-align: center;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+}
+
+button {
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 3.5px 5px 3.5px 5px;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.clock {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.ponteiro {
+    position: absolute;
+    width: 3px;
+    background-color: var(--cor-primaria);
+    top: 30%;
+    left: 45%;
+    transform-origin: bottom center;
+}
+
+.ponteiro.hora {
+    height: 45px;
+    /* transform: rotate(30deg); */
+}
+
+.ponteiro.minutos {
+    height: 60px;
+    /* transform: translate(-20%, -25%) rotate(-100deg); */
+}
+
+.ponteiro.segundos {
+    background-color: #ff0000;
+    height: 65px;
+    /* transform: translate(-20%, -30%) rotate(150deg); */
+}
+
+.centro {
+    position: absolute;
+    background-color: var(--cor-primaria);
+    height: 7px;
+    width: 7px;
+    top: 51%;
+    left: 44%;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+.relogio {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.data {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;    
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.num {
+    position: relative;
+}
+
+.num::before {
+    content: '';
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    transform: translateX(2px);
+}
