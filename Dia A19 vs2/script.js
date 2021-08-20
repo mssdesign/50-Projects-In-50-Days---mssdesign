@@ -35,7 +35,7 @@ function meuRelogio() {
 
     num_ht.innerHTML = `&nbsp${dia}`;
     dia_ht.innerHTML = `&nbsp${dias_semanas[dia_s]}`
-    mes_ht.innerHTML = `&nbsp${todos_meses[meses]}`
+    mes_ht.innerHTML = `&nbspde ${todos_meses[meses]}`
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
