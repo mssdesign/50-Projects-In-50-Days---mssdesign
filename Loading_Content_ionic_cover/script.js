@@ -17,7 +17,7 @@ function getData() {
     name.innerHTML = 'Marcos Paulo'
     date.innerHTML = '08/11/2021'
 
-    animated_bgs.forEach(bg => bg.classList).remove('animated-bg')
-    animated_bgs_texts.forEach(bg => bg.classList).remove('animated-bg-text')
+    animated_bgs.forEach(bg => bg.classList.remove('animated-bg'))
+    animated_bgs_texts.forEach(bg => bg.classList.remove('animated-bg-text'))
 }
 
