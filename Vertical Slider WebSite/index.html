@@ -1,0 +1,74 @@
+<!-- PROJETO 26 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Vertical</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: #fd3555">
+          <h1>Flores da Natureza</h1>
+          <p>Tudo em rosa</p>
+        </div>
+        <div style="background-color: #2a86ba">
+          <h1>Céu Azul</h1>
+          <p>Com as montanhas</p>
+        </div>
+        <div style="background-color: #252e33">
+          <h1>Castelo Solitário</h1>
+          <p>Em um local selvagem</p>
+        </div>
+        <div style="background-color: #ffb866">
+          <h1>Aguia Voando</h1>
+          <p>Na luz do por do sol</p>
+        </div>
+      </div>
+
+      <div class="right-slide">
+        <!-- os elementos dessa div estão na ordem inversa da div anterior para dar match -->
+        <div
+          style="
+            background-image: url('https://images.pexels.com/photos/53587/adler-bird-bird-of-prey-raptor-53587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.pexels.com/photos/170440/pexels-photo-170440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.pexels.com/photos/4804104/pexels-photo-4804104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+          "
+        ></div>
+        <div
+          style="
+            background-image: url('https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+          "
+        ></div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
