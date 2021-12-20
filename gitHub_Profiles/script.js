@@ -57,9 +57,7 @@ function createUserCard(user) {
 function addReposToCard(repos) {
   const reposEl = document.getElementById('repos')
 
-  repos
-  .slice(0, 5)
-  .forEach((repo) => {
+  repos.slice(0, 5).forEach((repo) => {
     const repoEl = document.createElement('a')
     repoEl.classList.add('repo')
     repoEl.href = repo.html_url
@@ -72,7 +70,7 @@ function addReposToCard(repos) {
 
 async function getRepos(username) {
   try {
-    const { data } = await axios.get(APIURL + username + '/repos')
+    const { data } = await axios.get(APIURL + username + '/repos?sort=created')
     addReposToCard(data)
   } catch (err) {
     if (err.response.status == 404) {
