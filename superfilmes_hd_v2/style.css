@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #143967;
+    background-color: #333;
     font-size: small;
     width: 110%;
 }
@@ -16,7 +16,7 @@ body {
 /* CABECALHO */
 header {
     display: flex;
-    background-color: #022146;
+    background-color: #b92b27;
     width: 100vw;
     height: 100px;
     position: fixed;
@@ -118,7 +118,7 @@ main {
     height: 180px;
     width: 225px;
     position: relative;
-    background-color: #022146;
+    background-color: #373B44;
     margin: 10px;
     cursor: pointer;
     overflow: hidden;
